@@ -1,0 +1,23 @@
+name = "una-escucha-qr"
+main = "src/index.ts"
+compatibility_date = "2026-08-08"
+workers_dev = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "una-escucha-qr"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "AUDIO_BUCKET"
+bucket_name = "una-escucha-qr-private"
+
+[vars]
+COOKIE_SECURE = "true"
+MAX_AUDIO_BYTES = "31457280"
+MAX_COVER_BYTES = "5242880"
